@@ -1,0 +1,58 @@
+:root{
+    --cor-fundo: #094e69 ;
+    --cor-principal: #033441 ;
+    --cor-secundaria: #296b4c; 
+    --cor-destaque: #6ab657;
+    --cor-texto: #b9da8e;
+
+}
+
+body {
+    background-image: url(imagens/desmat.png);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.caixa-principal{
+    background-color: var(--cor-principal);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+}
+
+h1{
+    color: var(--cor-destaque);
+}
+
+button {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    border: none;
+    border-radius: 6px;
+    padding: 6px;
+    transition: background-color 0.3s;
+}
+
+button:hover{
+    background-color: var(--cor-destaque);
+    color: var(--cor-principal);
+}
+
+.caixa-alternativas{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.caixa-resultado{
+   display: none;
+}
+
+.caixa-resultado.mostrar{
+   display:block; 
+}
